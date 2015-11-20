@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flow_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <EditText 
+        android:id="@+id/et_input"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:hint="请输入标签"/>
+	<Button 
+	    android:layout_toRightOf="@id/et_input"
+	    android:onClick="tijiao"
+	    android:id="@+id/btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="提交"/>
+    <com.hu.mutitextview.view.FlowLayout
+        android:layout_below="@id/et_input"
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.hu.mutitextview.view.FlowLayout>
+
+</RelativeLayout>
